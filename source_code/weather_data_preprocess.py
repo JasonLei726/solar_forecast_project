@@ -8,7 +8,7 @@ before applying data filling methods to all missing observations. The
 outcome is a continuous hourly weather dataset written as a .csv file.
 
 Note: This script is hard-coded to extract the features of interest from the
-      weather dataset at a timeframe from 1 January 2005 to 8 September 2015.
+      weather dataset from 1 January 2005 to 31 August 2015.
 
 This script does the following:
     1. Load weather data
