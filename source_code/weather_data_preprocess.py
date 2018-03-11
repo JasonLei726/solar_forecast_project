@@ -245,8 +245,7 @@ get_mean_columns(data=dataset, col_list = [n for n in range(4,21)], mean_list=me
 # 4. Apply data-filling methods
 # - Linear Interpolation
 print("Linear Interpolation")
-for n in range(4,len(dataset.columns)):
-    
+for n in range(4,len(dataset.columns)):    
     # Get list of index position of missing observations in current column
     print("\nColumn #", n)
     idx_list = dataset[dataset.iloc[:,n].isnull()].iloc[:,n]
@@ -266,7 +265,6 @@ get_mean_columns(data=dataset, col_list = [n for n in range(4,21)], mean_list=me
 # - Proxy Estimation
 col_of_interest = [4,5,6,7,20]
 for col in col_of_interest:
-    
     # Get list of index position of missing observations in current column
     idx_list = dataset[dataset.iloc[:,col].isnull()].iloc[:,col]
     
@@ -287,7 +285,6 @@ col_of_interest = [4,5,6,7,8,9,10,11,20]
 get_mean_columns(data=dataset, col_list = col_of_interest, mean_list=mean_list)
 
 for col in col_of_interest:
-    
     # Get list of index position of missing observations in current column
     print("Column #", col)
     idx_list = dataset[dataset.iloc[:,col].isnull()].iloc[:,col]
