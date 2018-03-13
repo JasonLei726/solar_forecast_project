@@ -26,3 +26,6 @@ Figure 2: Predicted and observed hourly mean solar irradiance (middle of July 20
 - For final performance tests:
   - forecast_performance_test.py : Evaluate model performance on unseen data.
 
+# Datasets
+- Case 5.1 - stationary.csv : Stationary Climate Dataset with all temporal features (feature scaling not applied)
+- Case 5.2 - non stationary.csv : Non-stationary Climate Dataset with all temporal features (feature scaling not applied)
